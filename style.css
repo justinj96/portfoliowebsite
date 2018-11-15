@@ -1,0 +1,75 @@
+html, body {
+	font-family: 'Roboto Mono', sans-serif;
+	text-align: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+.background {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: #67B26F;  /* fallback for old browsers */
+	background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+* {
+    margin: 0;
+    padding: 0;
+	}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+.intro, .projects {
+	min-height: 100vh;	
+}
+
+nav ul {
+	font-family: 'Roboto Mono', sans-serif;
+	text-align: right;
+	position: fixed;
+	width: 100%;
+	background: #67B26F;  /* fallback for old browsers */
+	background: linear-gradient(to right, rgba(76,162,205,.85), rgba(103,178,111,.85)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-size: 2vh;
+}
+
+.wrapper {
+	padding: 40vh 3vw 40vh 3vw;
+	font-size: 1.5vw;
+}
+
+.intro-text {
+	padding: 1.5vh;	
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.projects-title {
+	padding-top: 10vh;
+	font-size: 2vw;
+}
+
+@media (max-width: 450px) {
+	nav ul {
+		text-align: center;
+	}
+}
+
+@media (max-width: 840px) {
+	.wrapper {
+		font-size: 2vw;
+	}
+}
