@@ -31,19 +31,27 @@ a {
 	min-height: 100vh;	
 }
 
-nav ul {
+.navbar {
 	font-family: 'Roboto Mono', sans-serif;
 	text-align: right;
 	position: fixed;
 	width: 100%;
-	background: #67B26F;  /* fallback for old browsers */
-	background: linear-gradient(to right, rgba(76,162,205,.85), rgba(103,178,111,.85)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #67B26F;  
+	background: linear-gradient(to right, rgba(76,162,205,.85), rgba(103,178,111,.85)); 
 	font-size: 2vh;
+	height: 9vh;
 }
 
+.nav-link {
+	color: black !important;
+}
+
+
 .wrapper {
+	font-family: 'Roboto Mono', sans-serif;
 	padding: 40vh 3vw 40vh 3vw;
 	font-size: 1.5vw;
+	text-align: center;
 }
 
 .intro-text {
@@ -58,8 +66,10 @@ nav ul li {
 }
 
 .projects-title {
+	font-family: 'Roboto Mono', sans-serif;
 	padding-top: 10vh;
 	font-size: 2vw;
+	text-align: center;
 }
 
 @media (max-width: 450px) {
