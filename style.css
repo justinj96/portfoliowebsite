@@ -23,12 +23,12 @@ html, body {
     padding: 0;
 	}
 
-a {
-	text-decoration: none;
-	color: black;
+.intro, .about, .projects, .contact {
+	min-height: 100vh;
 }
-.intro, .projects {
-	min-height: 100vh;	
+
+.projects {
+	padding-top: 20px;
 }
 
 .navbar{
@@ -36,12 +36,14 @@ a {
 	text-align: right;
 	position: fixed;
 	width: 100%;
-	font-size: 2vh;
-	height: 7vh;
+	font-size: 1.5vh;
+	
 }
 
-.navbar-toggle, #navbarNav {
-	background: linear-gradient(to right, rgba(76,162,205,1), rgba(103,178,111,1));
+.navbar-toggle {
+	/* background: linear-gradient(to right, rgba(76,162,205,1), rgba(103,178,111,1)); */
+	transition: background 1s ease-in;
+	background: rgba(255,255,255,.8);
 }
 
 
@@ -55,34 +57,33 @@ a {
 	padding: 40vh 3vw 40vh 3vw;
 	font-size: 1.5vw;
 	text-align: center;
+	max-height: 100vh;
 }
 
 .intro-text {
 	padding: 1.5vh;	
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 25px;
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-.projects-title {
+.about-title, .projects-title, .contact-title {
 	font-family: 'Roboto Mono', sans-serif;
-	padding-top: 10vh;
+	padding-top: 8vh;
 	font-size: 2vw;
 	text-align: center;
 }
 
-@media (max-width: 450px) {
-	nav ul {
-		text-align: center;
-	}
+.contact-title {
+	padding-top: 8vh;
+}
+.contact {
+	background-color: rgba(110,169,158,1);
 }
 
 @media (max-width: 840px) {
 	.wrapper {
-		font-size: 2vw;
+		font-size: 3vw;
+	}
+
+	.about, .projects-title, .contact-title {
+		font-size: 2.5vw;
 	}
 }
