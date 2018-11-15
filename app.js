@@ -19,3 +19,29 @@ window.onload = function() {
       ]
     });
   };
+
+
+//use window.scrollY
+var scrollpos = window.scrollY;
+var header = document.getElementById("nav");
+
+function add_class_on_scroll() {
+    header.classList.add("navbar-toggle");
+}
+
+function remove_class_on_scroll() {
+    header.classList.remove("navbar-toggle");
+}
+
+window.addEventListener('scroll', function(){ 
+    //Here you forgot to update the value
+    scrollpos = window.scrollY;
+
+    if(scrollpos > 560){
+        add_class_on_scroll();
+    }
+    else {
+        remove_class_on_scroll();
+    }
+    console.log(scrollpos);
+});

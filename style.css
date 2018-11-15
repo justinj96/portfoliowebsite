@@ -31,16 +31,19 @@ a {
 	min-height: 100vh;	
 }
 
-.navbar {
+.navbar{
 	font-family: 'Roboto Mono', sans-serif;
 	text-align: right;
 	position: fixed;
 	width: 100%;
-	background: #67B26F;  
-	background: linear-gradient(to right, rgba(76,162,205,.85), rgba(103,178,111,.85)); 
 	font-size: 2vh;
-	height: 9vh;
+	height: 7vh;
 }
+
+.navbar-toggle, #navbarNav {
+	background: linear-gradient(to right, rgba(76,162,205,1), rgba(103,178,111,1));
+}
+
 
 .nav-link {
 	color: black !important;
