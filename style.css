@@ -15,7 +15,6 @@ html, body {
 	z-index: -1;
 	background: #67B26F;  /* fallback for old browsers */
 	background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	
 }
 
 * {
@@ -27,8 +26,12 @@ html, body {
 	min-height: 100vh;
 }
 
+.about, .contact {
+	background: white;
+}
+
 .projects {
-	padding-top: 20px;
+	background: rgba(110,169,158,1);
 }
 
 .navbar{
@@ -37,20 +40,17 @@ html, body {
 	position: fixed;
 	width: 100%;
 	font-size: 1.5vh;
-	
 }
 
 .navbar-toggle {
 	/* background: linear-gradient(to right, rgba(76,162,205,1), rgba(103,178,111,1)); */
 	transition: background 1s ease-in;
-	background: rgba(255,255,255,.8);
+	background: rgba(255,255,255,.9);
 }
-
 
 .nav-link {
 	color: black !important;
 }
-
 
 .wrapper {
 	font-family: 'Roboto Mono', sans-serif;
@@ -61,29 +61,71 @@ html, body {
 }
 
 .intro-text {
-	padding: 1.5vh;	
+	padding: 1.5vh;
+}
+
+#hello {
+	font-size: 2.5vw;
+}
+
+#full {
+	font-size: 1.5vw;
 }
 
 .about-title, .projects-title, .contact-title {
 	font-family: 'Roboto Mono', sans-serif;
 	padding-top: 8vh;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	text-align: center;
 }
 
 .contact-title {
-	padding-top: 8vh;
-}
-.contact {
-	background-color: rgba(110,169,158,1);
+	padding-top: 10vh;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1300px) {
 	.wrapper {
 		font-size: 3vw;
 	}
 
-	.about, .projects-title, .contact-title {
-		font-size: 2.5vw;
+	.about-title, .projects-title, .contact-title {
+		font-size: 3.5vw;
+	}
+}
+
+.col-md-4 {
+	position: relative;
+	width: auto;
+	min-height: 1px;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+}
+
+@media (min-width: 1500px) {
+	.container {
+		max-width: 1403px;	
+	}
+	.col-md-4 {
+		padding-right: 50px; 
+		padding-left: 50px;
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 1030px) {
+	#hello {
+		font-size: 4.5vw;
+	}
+	#full {
+		font-size: 3vw;
+	}
+}
+
+@media (max-width: 430px) {
+	#hello {
+		font-size: 5.5vw;
+	}
+	#full {
+		font-size: 4vw;
 	}
 }

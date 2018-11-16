@@ -2,11 +2,11 @@ window.onload = function() {
     Particles.init({
       selector: '.background',
       color: '#cce6ff',
-      maxParticles: 130,
+      maxParticles: 250,
       connectParticles: true,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 1400,
           options: {
             maxParticles: 80
           }
@@ -43,5 +43,5 @@ window.addEventListener('scroll', function(){
     else {
         remove_class_on_scroll();
     }
-    console.log(scrollpos);
+    // console.log(scrollpos);
 });
