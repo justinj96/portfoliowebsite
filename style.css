@@ -39,7 +39,7 @@ html, body {
 	text-align: right;
 	position: fixed;
 	width: 100%;
-	font-size: 1.5vh;
+	font-size: 2vh;
 }
 
 .navbar-toggle {
@@ -69,6 +69,7 @@ html, body {
 }
 
 #full {
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.5vw;
 }
 
@@ -77,6 +78,10 @@ html, body {
 	padding-top: 8vh;
 	font-size: 1.5vw;
 	text-align: center;
+}
+
+.projects-title {
+	padding-top: 12vh;
 }
 
 .contact-title {
@@ -128,4 +133,13 @@ html, body {
 	#full {
 		font-size: 4vw;
 	}
+}
+
+.fadeIn {
+	animation-duration: 3.5s;
+	animation-delay: .5s;
+}
+
+.fadeInDown {
+	animation-duration: 2s;
 }
