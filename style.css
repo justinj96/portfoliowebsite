@@ -75,17 +75,9 @@ html, body {
 
 .about-title, .projects-title, .contact-title {
 	font-family: 'Roboto Mono', sans-serif;
-	padding-top: 8vh;
+	padding-top: 12vh;
 	font-size: 1.5vw;
 	text-align: center;
-}
-
-.projects-title {
-	padding-top: 12vh;
-}
-
-.contact-title {
-	padding-top: 10vh;
 }
 
 @media (max-width: 1300px) {
@@ -106,9 +98,9 @@ html, body {
 	margin-bottom: 3vh;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
 	.container {
-		max-width: 1403px;	
+		max-width: 1903px;	
 	}
 	.col-md-4 {
 		padding-right: 50px; 
@@ -136,10 +128,31 @@ html, body {
 }
 
 .fadeIn {
-	animation-duration: 3.5s;
-	animation-delay: .5s;
+	animation-duration: 3s;
 }
 
 .fadeInDown {
 	animation-duration: 2s;
+}
+
+.tech-stack {
+	margin-top: 20vh;
+	margin-bottom: 20vh;
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.tech-img {
+	height: 15vh;
+	width: auto;
+	padding: 4vh 2vw 4vh 2vw;
+}
+
+@media (max-width: 768px) {
+	#about-text {
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
 }

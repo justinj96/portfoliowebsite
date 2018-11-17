@@ -21,7 +21,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav ml-auto py-2">
-			<a class="nav-item nav-link px-3" href="#intro">Home</a>
+			<a class="nav-item nav-link px-3" href="#">Home</a>
 			<a class="nav-item nav-link px-3" href="#about">About</a>
 			<a class="nav-item nav-link px-3" href="#projects">Projects</a>
 			<a class="nav-item nav-link px-3" href="#contact">Contact</a>
@@ -29,19 +29,49 @@
 		</div>
 	</nav>
 	<!-- Landing Page -->
-	<div class="intro" id="intro">
-		<div class="wrapper animated fadeIn">
+	<div class="intro animated fadeIn" id="intro">
+		<div class="wrapper">
 			<h1 class="intro-text" id="hello">Hello, my name is Justin</h1>
 			<p class="intro-text" id="full">Full Stack Developer | Software Engineer</p>
 		</div>
 	</div>
-	<div class="about" id="about">
-		<p class="about-title">About Me</p>
+	<!-- About Me -->
+	<div class="about animated fadeIn" id="about">
+        <div class="container">
+			<p class="about-title">About Me</p>
+            <div class="row align-items-center">
+                <div class="col-md-4 mx-auto d-block" id="picture">
+                    <img src="https://media.licdn.com/dms/image/C5603AQGuCpA1Goyldg/profile-displayphoto-shrink_200_200/0?e=1547683200&v=beta&t=guh_zRj5rIZ7uU9Tx_Qe635XEauO3EL9nRFZGKk6vtk" class="rounded-circle"></img>
+                </div>
+                <div class="col-md-8 text-left" id="about-text">
+                    <p>My name is Justin Jacobson. I am a Mangament Information Systems student
+						at California State University, Sacramento with a passion for software engineering.
+						Even though I'm technically a Business Administration student, I've had a life long affinity for technology and 
+						fell in love with programming after taking my first programming class (taught in Python) during my second semester at Sacramento State.
+						Along with my studies as an MIS Student, I spend most of my free time working towards a career
+						as a Software Engineer by learning to code.
+					</p>
+					<p>This website was built using HTML, CSS and JavaScript. Libraries I used include Bootstrap 4, Particles.js and Animate.css</p>
+                </div>
+			</div>
+			<div class="tech-stack">
+				<div class="m-auto">
+					<img src="./images/html5.png" class="tech-img">
+					<img src="./images/css.png" class="tech-img">
+					<img src="./images/js.png" class="tech-img">
+					<img src="./images/bootstrap.png" class="tech-img">
+					<img src="./images/react.svg" class="tech-img">
+					<img src="./images/node.png" class="tech-img">
+					<img src="./images/python.png" class="tech-img">
+					<img src="./images/java.png" class="tech-img">
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- Projects -->
-	<div class="projects">
+	<div class="projects animated fadeIn">
 		<div class="container" id="projects">
-			<p class="projects-title">Here are some of my projects</p>
+			<p class="projects-title">Some of my projects</p>
 
 			<div class="row"> 
 				<div class="col-md-4">
@@ -102,8 +132,8 @@
 		</div>
 	</div>
 	</div>
-	
-	<div class="contact" id="contact">
+	<!-- Contact -->
+	<div class="contact animated fadeIn" id="contact">
 		<p class="contact-title">Contact</p>
 	</div>
 	<canvas class="background"></canvas>
