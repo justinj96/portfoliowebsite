@@ -2,18 +2,30 @@ window.onload = function() {
     Particles.init({
       selector: '.background',
       color: '#cce6ff',
-      maxParticles: 150,
+      maxParticles: 80,
       connectParticles: true,
+			line_linked: {
+				enable: false
+			},
+			move: {
+				bounce: false,
+				attract: {
+					enable: false
+				}
+			},
+			onhover: {
+				enable: false
+			},
       responsive: [
         {
           breakpoint: 1400,
           options: {
-            maxParticles: 80
+            maxParticles: 50
           }
         }, {
           breakpoint: 375,
           options: {
-            maxParticles: 50
+            maxParticles: 30
           }
         }
       ]
