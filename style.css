@@ -216,7 +216,7 @@ a:hover {
 
 @media (max-width: 800px) {
   .center-form {
-    width: 70%;
+    width: 80%;
     margin: auto;
   }
   .form-control {

@@ -18,14 +18,14 @@ window.onload = function() {
 			},
       responsive: [
         {
-          breakpoint: 1400,
+          breakpoint: 764,
           options: {
-            maxParticles: 50
+            maxParticles: 0
           }
         }, {
           breakpoint: 375,
           options: {
-            maxParticles: 30
+            maxParticles: 0
           }
         }
       ]
