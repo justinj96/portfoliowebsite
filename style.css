@@ -206,7 +206,7 @@ a:hover {
 
 .icon {
   font-size: 7vw;
-  padding: 4vw;
+  margin: 4vw;
 }
 
 .center-form {
@@ -238,7 +238,7 @@ a:hover {
 
 .contact-text {
   font-size: 2vw;
-  margin: 5vh;
+  margin: 3vh;
 }
 
 .extra-space {
