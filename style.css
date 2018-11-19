@@ -210,13 +210,13 @@ a:hover {
 }
 
 .center-form {
-  width: 60%;
+  width: 45%;
   margin: auto;
 }
 
 @media (max-width: 800px) {
   .center-form {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
   .form-control {
@@ -243,4 +243,9 @@ a:hover {
 
 .extra-space {
   min-height: 20vh;
+}
+
+input, textarea {
+  display: block;
+  margin: auto;
 }
