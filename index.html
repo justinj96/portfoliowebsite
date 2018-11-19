@@ -36,8 +36,8 @@
 		</div>
 	</div>
 <!-- About Me -->
-	<div class="about animated fadeIn" id="about">
-		<div class="container">
+	<div class="about animated fadeIn">
+		<div class="container" id="about">
 			<p class="about-title">About Me</p>
 			<div class="row align-items-center">
 				<div class="col-md-4 mx-auto d-block" id="picture">
@@ -74,58 +74,59 @@
     <p class="projects-title">Some of my projects</p>
 
       <div class="row"> 
-        <div class="col-md-4">
+        <div class="col-md-4 card-wrapper">
           <div class="card mb4 shadow-lg">
             <img class="card-img-top" src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png" alt="Thumbnail [100%x225]" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">Description of app/website made</p>
+              <p class="card-text">Description of app/website made. Include technologies used and such.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 card-wrapper">
           <div class="card mb4 shadow-lg">
             <img class="card-img-top" src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png" alt="Thumbnail [100%x225]" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">Description of app/website made</p>
+              <p class="card-text">Description of app/website made. Include technologies used and such.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 card-wrapper">
           <div class="card mb4 shadow-lg">
             <img class="card-img-top" src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png" alt="Thumbnail [100%x225]" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">Description of app/website made</p>
+              <p class="card-text">Description of app/website made. Include technologies used and such.</p>
             </div>
           </div>
         </div>
+        
       </div>
 
       <div class="row"> 
-        <div class="col-md-4">
+        <div class="col-md-4 card-wrapper">
           <div class="card mb4 shadow-lg">
             <img class="card-img-top" src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png" alt="Thumbnail [100%x225]" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">Description of app/website made</p>
+              <p class="card-text">Description of app/website made. Include technologies used and such.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 card-wrapper">
           <div class="card mb4 shadow-lg">
             <img class="card-img-top" src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png" alt="Thumbnail [100%x225]" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">Description of app/website made</p>
+              <p class="card-text">Description of app/website made. Include technologies used and such.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 card-wrapper">
           <div class="card mb4 shadow-lg">
             <img class="card-img-top" src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png" alt="Thumbnail [100%x225]" data-holder-rendered="true">
             <div class="card-body">
-              <p class="card-text">Description of app/website made</p>
+              <p class="card-text">Description of app/website made. Include technologies used and such.</p>
             </div>
           </div>
         </div>
@@ -136,7 +137,39 @@
 <!-- Contact -->
   <div class="contact animated fadeIn" id="contact">
     <p class="contact-title">Contact</p>
+    <div class="m-auto">
+      <a href="https://www.linkedin.com/in/justin-jacobson/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/justinj96" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+    </div>
+    <div>
+      <div class="contact-text">Contact me through this form</div>
+    </div>
+    <div class="center-form">
+      <form action="https://formspree.io/justinkjacobson@yahoo.com" method="POST">
+        <div class="form-group row">
+          <label for="Name" class="col-2">Name</label>
+          <input type="name" name="name" class="form-control col-10">
+        </div>
+        <div class="form-group row">
+          <label for="Email" class="col-2">Email</label>
+          <input type="email" name="_replyto" class="form-control col-10" placeholder="name@example.com">
+        </div>
+        <div class="form-group row">
+          <label for="Subject" class="col-2">Subject</label>
+          <input type="text" name="_subject" class="form-control col-10">
+        </div>
+        <div class="form-group row">
+          <label for="Subject" class="col-2">Message</label>
+          <textarea type="text" name="message" class="form-control col-10" rows="6"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Send" class="btn btn-primary btn">
+        </div>
+      </form>
+
+    </div>
   </div>
+  <div class="extra-space"></div>
   <canvas class="background"></canvas>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
   <script src="app.js"></script>

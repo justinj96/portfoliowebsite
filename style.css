@@ -22,6 +22,15 @@ html, body {
   padding: 0;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
 .intro, .about, .projects, .contact {
   min-height: 100vh;
 }
@@ -80,6 +89,12 @@ html, body {
   text-align: center;
 }
 
+@media (max-width: 400px) {
+  #about {
+    font-size: 3.5vw;
+  }
+}
+
 @media (max-width: 1300px) {
   .wrapper {
     font-size: 3vw;
@@ -90,7 +105,26 @@ html, body {
   }
 }
 
-.col-md-4 {
+@media (max-width: 800px) {
+  .about-title, .projects-title, .contact-title {
+    font-size: 5.5vw;
+  }
+}
+
+.card-wrapper {
+  position: relative;
+  width: auto;
+  min-height: 1px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  padding: 4vh 4vw 4vh 4vw;
+}
+
+.card-text {
+  font-size: 0.7rem;
+}
+
+#picture {
   position: relative;
   width: auto;
   min-height: 1px;
@@ -98,14 +132,27 @@ html, body {
   margin-bottom: 3vh;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 2000px) {
   .container {
-    max-width: 1903px;	
+    max-width: 2000px;
   }
-  .col-md-4 {
-    padding-right: 50px; 
-    padding-left: 50px;
-    padding-top: 50px;
+  .card-wrapper {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1003px;	
+  }
+  #about {
+    max-width: 1900px;
+  }
+  .card-wrapper {
+    padding-right: 2vh; 
+    padding-left: 2vh;
+    padding-top: 4vh;
   }
 }
 
@@ -145,7 +192,7 @@ html, body {
 }
 
 .tech-img {
-  height: 15vh;
+  height: 13vh;
   width: auto;
   padding: 4vh 2vw 4vh 2vw;
 }
@@ -155,4 +202,45 @@ html, body {
     padding-left: 10vw;
     padding-right: 10vw;
   }
+}
+
+.icon {
+  font-size: 7vw;
+  padding: 4vw;
+}
+
+.center-form {
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .center-form {
+    width: 80%;
+    margin: auto;
+  }
+  .form-control {
+    width: 50%;
+  }
+}
+
+.btn {
+  text-align: center;
+  background-color: rgba(110,169,158,.8);
+  border-color: rgba(110,169,158,.8);
+}
+
+.btn:hover {
+  background-color: rgba(110,169,158,1);
+  border-color: rgba(110,169,158,1);
+}
+
+
+.contact-text {
+  font-size: 2vw;
+  margin: 5vh;
+}
+
+.extra-space {
+  min-height: 20vh;
 }
