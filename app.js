@@ -4,6 +4,7 @@ window.onload = function() {
       color: '#cce6ff',
       maxParticles: 80,
       connectParticles: true,
+	  retina_detect: true,
 			line_linked: {
 				enable: false
 			},
@@ -18,7 +19,7 @@ window.onload = function() {
 			},
       responsive: [
         {
-          breakpoint: 764,
+          breakpoint: 464,
           options: {
             maxParticles: 0
           }
