@@ -278,3 +278,8 @@ input, textarea {
   height: 35vh;
   width: 0 auto;
 }
+
+#rounded-cirlce {
+  height: 200px;
+  width: 200px;
+}
